@@ -66,6 +66,26 @@
       .card, .card:hover { transition: none; transform: none; }
     }
     /* Collaborator: add EDUCATION styles below this line */
+        /* ===== EDUCATION – timeline styling ===== */
+    .edu-timeline { position: relative; padding-left: 2rem; }
+    .edu-timeline::before {
+      content: ""; position: absolute; left: 7px; top: .4rem; bottom: .4rem; width: 2px;
+      background: linear-gradient(var(--accent, #38bdf8), transparent);
+    }
+    .edu-item { position: relative; margin-bottom: 1.5rem; }
+    .edu-item:last-child { margin-bottom: 0; }
+    .edu-item::before {
+      content: ""; position: absolute; left: calc(-2rem + 1px); top: 1.4rem;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--accent, #38bdf8);
+      box-shadow: 0 0 0 5px rgba(56, 189, 248, .18);
+    }
+    .edu-year {
+      display: inline-block; font-size: .75rem; letter-spacing: .04em;
+      color: var(--accent, #38bdf8); border: 1px solid currentColor;
+      border-radius: 999px; padding: .1rem .65rem;
+    }
+    .edu-tag { background: rgba(148, 163, 184, .12); color: #cbd5e1; font-weight: 500; }
   </style>
 </head>
 <body>
